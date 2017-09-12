@@ -37,45 +37,26 @@ main{
     background-color: grey;
 }
 
-/*img{*/
-    /*position: absolute;*/
-    /*bottom: 50%;*/
-    /*z-index: 1;*/
-/*}*/
-
-
-
 .fa-bars{
     font-size: 3rem;
     position: absolute;
     top: 4%;
     right: 7%;
 }
-
-#fists{
-    position: absolute;
-    bottom: 35px;
-
-}
-
-.hgroup{
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    line-height: normal;
-
+.pi{
     text-align: center;
+}
+#fists{
+    display: inline-block;
+    max-width: 100%;
 }
 
 #logo{
-    position: absolute;
-    display: block;
-    top: 15%;
-    left: auto;
-    right: auto;
-    width: 90%;
-    margin-left: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    max-width: 100%;
+}
 
-
-
+.hgroup{
+    text-align: center;
 }
