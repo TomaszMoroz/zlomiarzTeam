@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 	});
 
     // nav click -> scroll to section
-    $('.cd-main-nav a').on('click' function(){
+    $('.cd-main-nav a').on('click', function(){
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top
         }, 500);
