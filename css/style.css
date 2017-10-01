@@ -299,3 +299,8 @@ Main components
     font-weight: 300;
   }
 }
+
+.item img{
+  max-height: 80vh;
+  margin: 0 auto;
+}
