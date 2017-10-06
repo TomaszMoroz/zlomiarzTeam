@@ -232,7 +232,7 @@ Main components
   color: white;
 }
 .cd-fixed-bg.cd-bg-1 {
-  background-image: url("../img/Galeria2.jpg");
+  background-image: url("../img/gymBw.jpg");
 }
 
 .cd-scrolling-bg.cd-color-2 img {
@@ -248,10 +248,10 @@ Main components
   background-image: url("../img/IMG_0755.jpg");
 }
 .cd-fixed-bg.cd-bg-3 {
-  background-image: url("../img/cd-background-3.jpg");
+  background-image: url("../img/kidsBw.jpg");
 }
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("../img/cd-background-4.jpg");
+  background-image: url("../img/noGiBw.JPG");
 }
 @media only screen and (min-width: 768px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
@@ -271,7 +271,7 @@ Main components
 
 .cd-scrolling-bg {
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
   padding: 4em 0;
   line-height: 1.6;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
@@ -299,3 +299,50 @@ Main components
     font-weight: 300;
   }
 }
+
+.item img{
+  max-height: 80vh;
+  margin: 0 auto;
+}
+
+.trainer{
+  width: 200px;
+  height: 200px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-color: #7677a4;
+}
+
+/*@media (max-width: 420px){*/
+  /*.trainer{*/
+    /*width: 250px;*/
+    /*height: 250px;*/
+    /*background-color: blue;*/
+    /*margin: 10px 10px 10px 10px;*/
+    /*border-radius: 10px;*/
+  /*}*/
+/*}*/
+
+/*@media (min-width: 576px){*/
+  /*.trainer{*/
+    /*width: 250px;*/
+    /*height: 250px;*/
+    /*background-color: blue;*/
+    /*margin: 10px 10px 10px 10px;*/
+    /*border-radius: 10px;*/
+  /*}*/
+/*}*/
+
+/*@media (min-width: 992px){*/
+  /*.trainer{*/
+    /*width: 220px;*/
+    /*height: 250px;*/
+    /*background-color: blue;*/
+    /*margin: 5px 5px 5px 5px;*/
+    /*border-radius: 10px;*/
+  /*}*/
+
+  /*.cd-container{*/
+    /*max-width: 992px;*/
+  /*}*/
+/*}*/
