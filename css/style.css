@@ -305,44 +305,27 @@ Main components
   margin: 0 auto;
 }
 
+/* Trenerzy */
 .trainer{
-  width: 200px;
-  height: 200px;
-  margin: 10px 10px;
-  border-radius: 10px;
-  background-color: #7677a4;
+  padding: 0 10px;
 }
+.trainer + .trainer{
+  margin-top: 15px; 
+}
+  .trainer-img{
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+    max-width: 50%;
+  }
+    .trainer img{
+      border-radius: 10px;
+    }
+  .trainer-desc{
 
-/*@media (max-width: 420px){*/
-  /*.trainer{*/
-    /*width: 250px;*/
-    /*height: 250px;*/
-    /*background-color: blue;*/
-    /*margin: 10px 10px 10px 10px;*/
-    /*border-radius: 10px;*/
-  /*}*/
-/*}*/
+  }
 
-/*@media (min-width: 576px){*/
-  /*.trainer{*/
-    /*width: 250px;*/
-    /*height: 250px;*/
-    /*background-color: blue;*/
-    /*margin: 10px 10px 10px 10px;*/
-    /*border-radius: 10px;*/
-  /*}*/
-/*}*/
 
-/*@media (min-width: 992px){*/
-  /*.trainer{*/
-    /*width: 220px;*/
-    /*height: 250px;*/
-    /*background-color: blue;*/
-    /*margin: 5px 5px 5px 5px;*/
-    /*border-radius: 10px;*/
-  /*}*/
 
-  /*.cd-container{*/
-    /*max-width: 992px;*/
-  /*}*/
-/*}*/
+
+
