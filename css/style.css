@@ -233,6 +233,7 @@ Main components
 }
 .cd-fixed-bg.cd-bg-1 {
   background-image: url("../img/gymBw.jpg");
+  background-position: top center;
 }
 
 .cd-scrolling-bg.cd-color-2 img {
@@ -246,12 +247,15 @@ Main components
 }
 .cd-fixed-bg.cd-bg-2 {
   background-image: url("../img/IMG_0755.jpg");
+  background-position: bottom center;
 }
 .cd-fixed-bg.cd-bg-3 {
   background-image: url("../img/kidsBw.jpg");
+  background-position: bottom center;
 }
 .cd-fixed-bg.cd-bg-4 {
   background-image: url("../img/noGiBw.JPG");
+  background-position: bottom center;
 }
 @media only screen and (min-width: 768px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
@@ -293,7 +297,7 @@ Main components
 @media only screen and (min-width: 768px) {
   .cd-scrolling-bg {
     padding: 8em 0;
-    font-size: 20px;
+    /*font-size: 20px;*/
     font-size: 1.25rem;
     line-height: 2;
     font-weight: 300;
@@ -316,7 +320,7 @@ Main components
     float: left;
     display: inline-block;
     margin-right: 10px;
-    max-width: 50%;
+    max-width: 200px;
   }
     .trainer img{
       border-radius: 10px;
