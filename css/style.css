@@ -66,6 +66,14 @@ Modules - reusable parts of our design
   clear: both;
 }
 
+.cd-container p {
+  position: absolute;
+  max-width: 768px;
+  margin: 60px auto;
+  color: #d2c3c5;
+
+}
+
 /* -------------------------------- 
 
 Main components 
@@ -189,8 +197,8 @@ Main components
     color: #3d3536;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14px;
-    font-size: 0.875rem;
+
+    font-size: 1.3rem;
   }
   .no-touch .cd-main-nav a:hover {
     color: #99a478;
@@ -287,12 +295,16 @@ Main components
   color: #a6989a;
 }
 .cd-scrolling-bg.cd-color-2 {
-  background-color: #7677a4;
-  color: #111111;
+  /*background-color: #7677a4;*/
+  /*color: #111111;*/
+  background-color: #2a2323;
+  color: #a6989a;
 }
 .cd-scrolling-bg.cd-color-3 {
-  background-color: #b4d7a8;
-  color: #3d3536;
+  /*background-color: #b4d7a8;*/
+  /*color: #3d3536;*/
+  background-color: #2a2323;
+  color: #a6989a;
 }
 @media only screen and (min-width: 768px) {
   .cd-scrolling-bg {
@@ -323,7 +335,7 @@ Main components
     max-width: 200px;
   }
     .trainer img{
-      border-radius: 10px;
+      border-radius: 8px;
     }
   .trainer-desc{
 
