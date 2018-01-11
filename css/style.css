@@ -1,6 +1,21 @@
+
+
+@font-face{
+  font-family: 'ourFont';
+  src: url('../tw-cen-mt-condensed-extra-bold/TCCEB.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'secondaryFont';
+  src: url('../tw-cen-mt-condensed/TCCM____.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
 /* -------------------------------- 
 
-Primary style
+Mobile-first 
 
 -------------------------------- */
 html * {
@@ -8,17 +23,12 @@ html * {
   -moz-osx-font-smoothing: grayscale;
 }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 body {
   font-size: 100%;
-  font-family: 'Jockey One', sans-serif;
-  color: #3d3536;
-  background-color: rgb(255, 255, 255);
+  font-family: 'ourFont';
+  color: #c9dae9;
+  /* background-color: #303845 */
 }
 
 body, html {
@@ -27,36 +37,41 @@ body, html {
 }
 
 a {
-  color: #b4d7a8;
+  color: #6d6d6d;
   text-decoration: none;
 }
 
 h1{
+  text-shadow: 4px 4px 4px #2f292a;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+}
 
-  /*opacity: 0.9;*/
-  text-shadow: #2f292a;
-  /*background-image: url("../img/ZlomiarzTeamLogo.png");*/
+span{
+  color: rgb(228, 228, 228);
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.visible{
+  display: none;
+  position: absolute;
+  bottom: 0;
 }
 
 
-/*@media only screen and (max-width: 767px){*/
-  /*.cd-header #cd-logo img {*/
-    /*display: block;*/
-    /*width: 100px;*/
-    /*position: absolute;*/
-    /*top: 3px;*/
-  /*}*/
-/*}*/
-
 /* -------------------------------- 
 
-Modules - reusable parts of our design
+Modules 
 
 -------------------------------- */
+
+
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 768px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .cd-container::after {
@@ -66,19 +81,17 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-.cd-container p {
-  position: absolute;
-  max-width: 768px;
-  margin: 60px auto;
-  color: #d2c3c5;
+#priceList, .cd-container p {
 
-}
-
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
+  max-width: 100%;
+  margin: 0 auto;
+  color: #cac8c8;
+  font-size: 12px;
+  font-family: 'secondaryFont';
+  padding: 2%;
+ 
+ 
+  }
 
 
 .cd-header {
@@ -86,7 +99,7 @@ Main components
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 70px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
@@ -106,15 +119,99 @@ Main components
   width: 40px;
   position: absolute;
   top: 5px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .8s ease-in-out;
 }
-@media only screen and (min-width: 768px) {
-  .cd-header {
-    height: 70px;
-  }
-  .cd-header #cd-logo {
-    margin: 23px 0 0 5%;
-  }
+.cd-header #cd-logo img:hover{
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
 }
+
+.cd-header #team {
+  color: rgba(134, 147, 167, 0.9);
+  position: absolute;
+  font-family: 'Open Sans Condensed', sans-serif;
+  top: 25px;
+  left: 25%;
+  font-size: 15px;
+}
+
+.cd-scrolling-bg {
+  position: relative;
+  min-height: 100vh;
+  padding: 2em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+    overflow: hidden;
+    text-align:justify;  
+    text-justify: auto
+    
+}
+.cd-scrolling-bg.cd-color-1, .cd-scrolling-bg.cd-color-3 {
+  background-color: #303845;
+
+}
+
+ .cd-scrolling-bg.cd-color-2{
+ background-color:#303845;
+}
+
+.cd-main-content {
+ 
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/gymBw.jpg");
+  background-position: top left;
+}
+
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/gi.jpg");
+  background-position: bottom;
+
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../img/IMG_0755.jpg");
+  background-position: bottom center;
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../img/noGiBw.jpg");
+  background-position: 50% 50%;
+}
+
+.cd-fixed-bg.cd-bg-5 {
+  background-image: url("../img/kidsBw.jpg");
+  background-position: 50% 90%;
+}
+
 
 .cd-header #cd-logo img {
   display: block;
@@ -155,11 +252,249 @@ Main components
   height: 50px;
   line-height: 50px;
   padding-left: 5%;
-  background: #2f292a;
+  background: #303845;
   border-top: 1px solid #453c3d;
-  color: #8e7d7f;
+  color: #b19b9e;
 }
+
+
+
+/* section 1 */
+.cd-scrolling-bg.cd-color-2.gear{
+  position: relative;
+  
+}
+
+.cd-scrolling-bg.cd-color-2.gear:after {
+  background-image: url('../img/a5.png');
+  opacity: 0.3;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: -90px -70px, bottom left;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  
+  }
+  
+/* Trenerzy */
+
+#Trenerzy{
+  color: rgb(187, 186, 186);
+  
+}
+
+
+#Trenerzy .row{
+  margin-top: 65px;
+}
+
+.row h2{
+  text-align: left;
+  margin: 0 10px 60px;
+
+  
+}
+
+
+.trainer{
+  padding: 0 10px;
+  
+}
+
+.trainer.col-xs-12{
+  margin: 5 5px;
+}
+.trainer + .trainer{
+  margin-top: 15px; 
+}
+  .trainer-img{
+    float: left;
+    display: block;
+    margin-right: 10px;
+    max-width: 200px;
+
+    box-sizing: border-box;
+    position: relative;
+    
+  }
+
+
+    .trainer .portrait{
+      border-radius: 8px;
+      box-sizing: border-box;
+      max-width: 130px;
+      
+    }
+
+  
+  .onClick{
+    position: absolute;
+    top:8px;
+    left:8px;
+    height: 25px;
+  }
+  .trainer-desc{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'secondaryFont';
+    font-size: 12px;
+  
+  }
+
+  .name{
+    display: none;
+  }
+
+  .visitCard{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20%;
+  }
+
+  .trainer-img .portrait:hover{
+    cursor: pointer;
+  }
+
+  .trainer-img.black .portrait:hover{
+    border: 8px solid black;
+  }
+
+  .trainer-img.brown .portrait:hover{
+    border: 8px solid rgb(73, 25, 25);
+  }
+
+  .trainer-img.blue .portrait:hover{
+    border: 8px solid rgb(29, 29, 95);
+  }
+
+  /* grafik */
+
+  #schedule{
+    margin: 10px auto;
+    background-image: url('../img/grafik.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+    height: 80vh;
+    min-height: 40vh;
+  
+  }
+
+  /* galeria */
+
+  .item img{
+    max-height: 80vh;
+    margin: 0 auto;
+  }
+
+  #gal h2{
+    margin-top: 60px;
+  }
+
+  /* google maps API & social media buttons + contact info */
+
+  #map{
+    min-width: 320px;
+    min-height: 320px;
+    border-radius: 6px;
+    float: right;
+    
+    
+  }
+
+  #map p{
+    color: white;
+  }
+
+  #adres{
+    margin: 0 10px;
+    
+  }
+
+  .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .icon{
+    flex: 1;
+    margin:  10px 40px;
+  }
+
+  i:hover{
+    color: rgb(128, 97, 96);
+  }
+
+  #socialMedia{
+    margin: 0 ;
+   
+  }
+  
+  #socialMedia .icon:hover {
+    cursor: pointer;
+  }
+  
+  #socialMedia li {
+   margin: 20px 15%;
+   display: block;
+    float: left;
+
+  }
+
+  #socialMedia ul{
+    margin:0 auto;
+  }
+
+  #socialMedia a:link, #socialMedia a:visited{
+    text-decoration: none;
+    
+  }
+
+
+  
+  .fa{
+    font-size: 60px;
+    color:rgb(228, 214, 214);
+  }
+
+  #Kontakt ul{
+    margin-top: 65px;
+  }
+
+  #priceList{
+    margin: 0 auto;
+    background-color: #212730;
+    border-radius: 5px;
+   
+  }
+
+ th, tr, td{
+    text-align: center;
+  }
+
+  #logo1{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/bump.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+  }
+
 @media only screen and (min-width: 768px) {
+  .cd-header #cd-logo {
+    margin: 23px 0 0 5%;
+  }
+  
   .cd-main-nav {
     width: auto;
     height: auto;
@@ -201,145 +536,231 @@ Main components
     font-size: 1.3rem;
   }
   .no-touch .cd-main-nav a:hover {
-    color: #99a478;
+    color: #9c9c9c;
   }
-}
 
-.cd-main-content {
-  /* you need to assign a min-height to the main content so that the children can inherit it*/
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.cd-fixed-bg {
-  position: relative;
-  min-height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 1;
-}
-.cd-fixed-bg h1, .cd-fixed-bg h2 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 1170px;
-  text-align: center;
-  font-size: 30px;
-  font-size: 1.875rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  color: white;
-}
-.cd-fixed-bg.cd-bg-1 {
-  background-image: url("../img/gymBw.jpg");
-  background-position: top center;
-}
-
-.cd-scrolling-bg.cd-color-2 img {
-    position: absolute;
-    top: -20%;
-    left: -20%;
-    opacity: 0.4;
-    max-width: 100%;
-    overflow: hidden;
-
-}
-.cd-fixed-bg.cd-bg-2 {
-  background-image: url("../img/IMG_0755.jpg");
-  background-position: bottom center;
-}
-.cd-fixed-bg.cd-bg-3 {
-  background-image: url("../img/kidsBw.jpg");
-  background-position: bottom center;
-}
-.cd-fixed-bg.cd-bg-4 {
-  background-image: url("../img/noGiBw.JPG");
-  background-position: bottom center;
-}
-@media only screen and (min-width: 768px) {
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
-    font-size: 45px;
-      text-shadow: 0 0 10px #000000;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-fixed-bg {
-    background-attachment: fixed;
-  }
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
     font-size: 70px;
-    font-weight: 300;
+      text-shadow: 0 0 10px #000000;
   }
-}
 
-.cd-scrolling-bg {
-  position: relative;
-  min-height: 100vh;
-  padding: 4em 0;
-  line-height: 1.6;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  .cd-scrolling-bg p{
+    font-size: 18px;
+    padding-bottom: 4%;
+    max-width: 75%;
+  }
+
+  #priceList{
+    font-size: 25px;
+  }
+
+  .cd-scrolling-bg.cd-color-2.gear {
+    background-image: url('../img/a5.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -350px -200px;
     overflow: hidden;
-}
-.cd-scrolling-bg.cd-color-1 {
-  background-color: #2a2323;
-  color: #a6989a;
-}
-.cd-scrolling-bg.cd-color-2 {
-  /*background-color: #7677a4;*/
-  /*color: #111111;*/
-  background-color: #2a2323;
-  color: #a6989a;
-}
-.cd-scrolling-bg.cd-color-3 {
-  /*background-color: #b4d7a8;*/
-  /*color: #3d3536;*/
-  background-color: #2a2323;
-  color: #a6989a;
-}
-@media only screen and (min-width: 768px) {
+    
+    }
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .item1{
+    padding: 2%;
+    width: 49%;
+    box-sizing: border-box;
+  }
+
+  .item2{
+    padding: 2%;
+    width: 49%;
+    box-sizing: border-box;
+  }
+    .icon{
+      float: left;
+      margin:  10px 13%;
+    }
+
+  span{
+    font-size:  35px;
+    color: rgb(231, 231, 231);
+   
+  }
+
   .cd-scrolling-bg {
     padding: 8em 0;
-    /*font-size: 20px;*/
     font-size: 1.25rem;
     line-height: 2;
     font-weight: 300;
   }
-}
 
-.item img{
-  max-height: 80vh;
-  margin: 0 auto;
-}
-
-/* Trenerzy */
-.trainer{
-  padding: 0 10px;
-}
-.trainer + .trainer{
-  margin-top: 15px; 
-}
-  .trainer-img{
-    float: left;
-    display: inline-block;
-    margin-right: 10px;
-    max-width: 200px;
-  }
-    .trainer img{
-      border-radius: 8px;
-    }
   .trainer-desc{
-
+   
+    font-size: 15px;
+    
+  
   }
+
+  .trainer .portrait{
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 200px;   
+   
+    
+  }
+
+
+  .visitCard{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5%;
+  }
+
+  #logo1{
+    width: 400px;
+    height: 200px;
+    
+  }
+
+  .cd-header #team {
+    color: rgba(88, 98, 112, 0.548);
+    position: absolute;
+    font-family: 'Open Sans Condensed', sans-serif;
+    top: 25px;
+    left: 120px;
+    font-size: 15px;
+  }
+
+  #map{
+    width: 350px;
+    height: 350px;
+    
+  }
+}
+
+@media (min-width: 992px) { 
+ 
+ #Onas > div > p{
+
+
+    font-size: 18px;
+    padding-bottom: 8%;
+    max-width: 75%;
+  }
+
+  #priceList{
+    font-size: 25px;
+  }
+
+ }
+
+@media only screen and (min-width: 1171px) {
+  .cd-container{
+    max-width: 1200px;
+  }
+
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 90px;
+    font-weight: 300;
+  }
+
+  .cd-scrolling-bg {
+    position: relative;
+    padding: 4em 0;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 100;
+  }
+
+  #Onas > div > p{
+    
+    
+        font-size: 22px;
+        padding-bottom: 4%;
+        max-width: 90%;
+      }
+    
+
+  .cd-scrolling-bg p{
+    font-size: 25px;
+    padding-bottom: 4%;
+    max-width: 100%;
+  }
+
+  #priceList{
+    font-size: 25px;
+  }
+
+
+  
+
+  #logo1{
+  
+    width: 600px;
+    height: 300px;
+     margin: 20px auto 0; 
+   
+     
+    
+  } 
+
+  .visitCard{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5%;
+  }
+
+  
+  .cd-scrolling-bg.cd-color-2.gear {
+    background-image: url('../img/a55.png');
+    background-size: 67%;
+    background-repeat: no-repeat;
+    background-position: -250% - 50%, 50 50;
+
+  
+    overflow: hidden;
+    
+    }
+
+  
+
+
+  span{
+  
+    font-weight: bold;
+    font-size: 35px;
+    
+  }
+
+  .trainer-desc{
+    
+     font-size: 22px;
+   
+   }
+
+  .cd-header #team {
+  
+    top: 25px;
+    left: 170px;
+  
+  }
+
+  #map{
+    margin-right: 20px;
+    width: 430px;
+    height: 430px;
+  }
+  
+}
+
+
 
 
 
