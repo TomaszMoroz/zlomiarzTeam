@@ -28,11 +28,11 @@ body {
   font-size: 100%;
   font-family: 'ourFont';
   color: #c9dae9;
-  /* background-color: #303845 */
+  
 }
 
 body, html {
-  /* important */
+
   height: 100%;
 }
 
