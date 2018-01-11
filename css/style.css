@@ -28,7 +28,11 @@ body {
   font-size: 100%;
   font-family: 'ourFont';
   color: #c9dae9;
+<<<<<<< HEAD
   
+=======
+  background-color: rgb(255, 255, 255);
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
 }
 
 body, html {
@@ -48,7 +52,11 @@ h1{
 }
 
 span{
+<<<<<<< HEAD
   color: rgb(228, 228, 228);
+=======
+  color: rgb(255, 255, 255);
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   font-weight: bold;
   font-size: 15px;
   
@@ -81,6 +89,7 @@ Modules
   clear: both;
 }
 
+<<<<<<< HEAD
 #priceList, .cd-container p {
 
   max-width: 100%;
@@ -90,6 +99,19 @@ Modules
   font-family: 'secondaryFont';
   padding: 2%;
  
+=======
+.cd-container p {
+
+  max-width: 100%;
+  margin: 0 auto;
+  color: #eaf5ff;
+  letter-spacing: 3px;
+  font-weight: thin;
+  font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'secondaryFont';
+    padding: 2%;
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
  
   }
 
@@ -128,11 +150,19 @@ Modules
 }
 
 .cd-header #team {
+<<<<<<< HEAD
   color: rgba(134, 147, 167, 0.9);
   position: absolute;
   font-family: 'Open Sans Condensed', sans-serif;
   top: 25px;
   left: 25%;
+=======
+  color: rgba(134, 147, 167, 0.548);
+  position: absolute;
+  font-family: 'Open Sans Condensed', sans-serif;
+  top: 25px;
+  left: 90px;
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   font-size: 15px;
 }
 
@@ -147,11 +177,74 @@ Modules
     text-align:justify;  
     text-justify: auto
     
+<<<<<<< HEAD
 }
 .cd-scrolling-bg.cd-color-1, .cd-scrolling-bg.cd-color-3 {
   background-color: #303845;
 
+=======
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
 }
+.cd-scrolling-bg.cd-color-1, .cd-scrolling-bg.cd-color-2, .cd-scrolling-bg.cd-color-3 {
+  background-color: #2a2323;
+  color: #a6989a;
+}
+
+.cd-main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/gymBw.jpg");
+  background-position: top left;
+}
+
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/gi.JPG");
+  background-position: bottom;
+
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../img/IMG_0755.jpg");
+  background-position: bottom center;
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../img/noGiBw.JPG");
+  background-position: 50% 50%;
+}
+
+.cd-fixed-bg.cd-bg-5 {
+  background-image: url("../img/kidsBw.jpg");
+  background-position: 50% 90%;
+}
+
 
  .cd-scrolling-bg.cd-color-2{
  background-color:#303845;
@@ -293,6 +386,47 @@ Modules
   margin-top: 65px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+/* section 1 */
+
+.cd-scrolling-bg.cd-color-2.gear {
+  background-image: url('../img/a5.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: -90px -70px, bottom left;
+
+  overflow: hidden;
+  
+  }
+
+  #logo1{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/bump.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+  }
+
+
+
+/* Trenerzy */
+
+#Trenerzy{
+  color: rgb(187, 186, 186);
+  
+}
+
+
+#Trenerzy .row{
+  margin-top: 65px;
+}
+
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
 .row h2{
   text-align: left;
   margin: 0 10px 60px;
@@ -317,11 +451,15 @@ Modules
     display: block;
     margin-right: 10px;
     max-width: 200px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
     box-sizing: border-box;
     position: relative;
     
   }
+<<<<<<< HEAD
 
 
     .trainer .portrait{
@@ -332,6 +470,14 @@ Modules
     }
 
   
+=======
+    .trainer .portrait{
+      border-radius: 8px;
+      box-sizing: border-box;
+      max-width: 200px;
+      
+    }
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   .onClick{
     position: absolute;
     top:8px;
@@ -374,6 +520,7 @@ Modules
   /* grafik */
 
   #schedule{
+<<<<<<< HEAD
     margin: 10px auto;
     background-image: url('../img/grafik.png');
     background-size: contain;
@@ -383,6 +530,20 @@ Modules
     height: 80vh;
     min-height: 40vh;
   
+=======
+    margin: auto;
+    background-image: url('../img/grafik.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+   
+    position: relative;
+    
+    height: 8
+     vh;
+    min-height: 40vh;
+    /* width: 100%; */
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   }
 
   /* galeria */
@@ -403,8 +564,11 @@ Modules
     min-height: 320px;
     border-radius: 6px;
     float: right;
+<<<<<<< HEAD
     
     
+=======
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   }
 
   #map p{
@@ -412,6 +576,7 @@ Modules
   }
 
   #adres{
+<<<<<<< HEAD
     margin: 0 10px;
     
   }
@@ -439,6 +604,22 @@ Modules
   }
   
   #socialMedia .icon:hover {
+=======
+    margin: 0 5px;
+  }
+
+  .icon{
+    float: left;
+    margin:  10px auto;
+  }
+
+  #socialMedia{
+    margin: 0 auto;
+  }
+  
+  #socialMedia .icon:hover {
+    color: rgb(175, 13, 13);
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
     cursor: pointer;
   }
   
@@ -458,17 +639,28 @@ Modules
     
   }
 
+<<<<<<< HEAD
 
   
   .fa{
     font-size: 60px;
     color:rgb(228, 214, 214);
+=======
+  #socialMedia .section{
+    margin: 0 auto;
+  }
+  
+  .fa{
+    font-size: 60px;
+    color:rgb(241, 229, 229);
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   }
 
   #Kontakt ul{
     margin-top: 65px;
   }
 
+<<<<<<< HEAD
   #priceList{
     margin: 0 auto;
     background-color: #212730;
@@ -489,6 +681,12 @@ Modules
     background-position: center;
     height: 20vh;
   }
+=======
+  #logo1{
+    margin: 20px auto 20px;
+  }
+  
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
 
 @media only screen and (min-width: 768px) {
   .cd-header #cd-logo {
@@ -545,6 +743,7 @@ Modules
   }
 
   .cd-scrolling-bg p{
+<<<<<<< HEAD
     font-size: 18px;
     padding-bottom: 4%;
     max-width: 75%;
@@ -554,15 +753,26 @@ Modules
     font-size: 25px;
   }
 
+=======
+    font-size: 25px;
+    padding-bottom: 8%;
+  }
+
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   .cd-scrolling-bg.cd-color-2.gear {
     background-image: url('../img/a5.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: -350px -200px;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
     overflow: hidden;
     
     }
 
+<<<<<<< HEAD
   .flex{
     display: flex;
     justify-content: space-between;
@@ -580,6 +790,8 @@ Modules
     width: 49%;
     box-sizing: border-box;
   }
+=======
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
     .icon{
       float: left;
       margin:  10px 13%;
@@ -587,12 +799,19 @@ Modules
 
   span{
     font-size:  35px;
+<<<<<<< HEAD
     color: rgb(231, 231, 231);
    
+=======
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   }
 
   .cd-scrolling-bg {
     padding: 8em 0;
+<<<<<<< HEAD
+=======
+    /*font-size: 20px;*/
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
     font-size: 1.25rem;
     line-height: 2;
     font-weight: 300;
@@ -601,6 +820,7 @@ Modules
   .trainer-desc{
    
     font-size: 15px;
+<<<<<<< HEAD
     
   
   }
@@ -613,6 +833,11 @@ Modules
     
   }
 
+=======
+  
+  }
+
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
 
   .visitCard{
     text-align: center;
@@ -623,11 +848,18 @@ Modules
   #logo1{
     width: 400px;
     height: 200px;
+<<<<<<< HEAD
     
   }
 
   .cd-header #team {
     color: rgba(88, 98, 112, 0.548);
+=======
+  }
+
+  .cd-header #team {
+    color: rgba(134, 147, 167, 0.548);
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
     position: absolute;
     font-family: 'Open Sans Condensed', sans-serif;
     top: 25px;
@@ -638,6 +870,7 @@ Modules
   #map{
     width: 350px;
     height: 350px;
+<<<<<<< HEAD
     
   }
 }
@@ -658,6 +891,13 @@ Modules
 
  }
 
+=======
+  }
+}
+
+
+
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
 @media only screen and (min-width: 1171px) {
   .cd-container{
     max-width: 1200px;
@@ -678,6 +918,7 @@ Modules
     line-height: 2;
     font-weight: 100;
   }
+<<<<<<< HEAD
 
   #Onas > div > p{
     
@@ -724,16 +965,48 @@ Modules
     background-repeat: no-repeat;
     background-position: -250% - 50%, 50 50;
 
+=======
+
+  
+
+  #logo1{
+  
+    width: 600px;
+    height: 300px;
+     margin: 20px auto 0; 
+   
+     
+    
+  } 
+
+  .visitCard{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5%;
+  }
+
+  
+  .cd-scrolling-bg.cd-color-2.gear {
+    background-image: url('../img/a5.png'), url('../img/a3.PNG');
+    background-size: 67%;
+    background-repeat: no-repeat;
+    background-position: -250% - 50%, 50 50;
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
   
     overflow: hidden;
     
     }
 
+<<<<<<< HEAD
   
 
 
   span{
   
+=======
+  span{
+    color: rgb(255, 255, 255);
+>>>>>>> 2d868dcc01475a3ba2c68fe8a75e34bcaf9ea8f2
     font-weight: bold;
     font-size: 35px;
     
