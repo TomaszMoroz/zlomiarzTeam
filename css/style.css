@@ -531,6 +531,12 @@ footer{
   background-color: white;
 }
 
+.partners{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 768px) {
   .cd-header #cd-logo {
     margin: 23px 0 0 5%;
@@ -798,6 +804,10 @@ footer{
     margin-right: 20px;
     width: 430px;
     height: 430px;
+  }
+
+  .partners{
+    max-width: 1200;
   }
   
 }
