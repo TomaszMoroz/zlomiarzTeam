@@ -508,12 +508,27 @@ Modules
     margin: 0 auto;
     background-color: #2c2c2c;
     border-radius: 5px;
+    width: 75%;
+    table-layout: fixed;
    
   }
 
  th, tr, td{
-    text-align: center;
+    text-align: right;
+    width: 16%;
   }
+
+  .wideCell{
+    width: 18%;
+    padding-left:5px;
+    
+  }
+
+  .wideCell, .white{
+    color: white;
+  }
+
+
 /* 
   #logo1{
     margin-left: auto;
