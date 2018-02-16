@@ -410,12 +410,13 @@ Modules
 
   #schedule{
     margin: 10px auto;
-    background-image: url('../img/grafik.png');
+    background-image: url('../img/www.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
     position: relative;
     height: 80vh;
+ 
     min-height: 40vh;
   
   }
@@ -729,6 +730,9 @@ footer{
 }
 
 @media (min-width: 992px) { 
+  #Onas{
+    column-count: 3;
+  }
  
  #Onas > div > p{
 
