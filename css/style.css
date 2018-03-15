@@ -410,7 +410,7 @@ Modules
 
   #schedule{
     margin: 10px auto;
-    background-image: url('../img/grafikN.png');
+    background-image: url('../img/grafikM.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -685,6 +685,12 @@ footer{
     font-weight: 300;
   }
 
+  #schedule{
+    background-image: url('../img/grafikN.png');
+ 
+  
+  }
+
   .trainer-desc{
    
     font-size: 15px;
@@ -730,15 +736,27 @@ footer{
 }
 
 @media (min-width: 992px) { 
-  #Onas{
-    column-count: 3;
+  #columns{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .left{
+    flex-grow: 1;
+  }
+
+  .right{
+    flex-grow: 3;
   }
  
- #Onas > div > p{
+ #Onas   p{
 
 
     font-size: 18px;
     padding-bottom: 8%;
+    margin: 0;
+    
     max-width: 75%;
   }
 
@@ -769,11 +787,11 @@ footer{
     font-weight: 100;
   }
 
-  #Onas > div > p{
+  #Onas  p{
     
     
         font-size: 22px;
-        padding-bottom: 4%;
+        /* padding-bottom: 4%; */
         max-width: 90%;
       }
     
