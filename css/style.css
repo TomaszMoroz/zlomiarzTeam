@@ -100,8 +100,9 @@ Modules
   left: 0;
   width: 100%;
   height: 70px;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  /* background: rgba(255, 255, 255, 0.95); */
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
 
   z-index: 2;
 }
@@ -410,7 +411,7 @@ Modules
 
   #schedule{
     margin: 10px auto;
-    background-image: url('../img/grafikM.png');
+    background-image: url('../img/GRAFIK_MOBILE_luty.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -527,6 +528,11 @@ Modules
 
   .wideCell, .white{
     color: white;
+  }
+
+  .summer-offer span{
+    font-size: 15px;
+    color: #944d4d;
   }
 
 
@@ -676,7 +682,7 @@ footer{
   }
 
   #schedule{
-    background-image: url('../img/grafikN.png');
+    background-image: url('../img/GRAFIK_WWW_1_02.png');
  
   
   }
@@ -752,6 +758,11 @@ footer{
 
   #priceList{
     font-size: 25px;
+  }
+
+  .summer-offer span{
+    font-size: 25px;
+    color: #944d4d;
   }
 
  }

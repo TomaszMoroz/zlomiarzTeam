@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
 
     // gladkie przewijanie
     $('.cd-header a').on('click', function(){
+        $('.cd-main-nav ul').removeClass('is-visible');
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top
         }, 500);
