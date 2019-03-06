@@ -411,7 +411,7 @@ Modules
 
   #schedule{
     margin: 10px auto;
-    background-image: url('../img/GRAFIK_MOBILE_luty.png');
+    background-image: url('../img/mobile.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -682,7 +682,7 @@ footer{
   }
 
   #schedule{
-    background-image: url('../img/GRAFIK_WWW_1_02.png');
+    background-image: url('../img/Marzec_www.png');
  
   
   }
